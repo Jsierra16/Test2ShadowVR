@@ -10,8 +10,7 @@ const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.inner
 const renderer = new THREE.WebGLRenderer();
 renderer.setSize( window.innerWidth, window.innerHeight );
 renderer.xr.enabled = true;
-this.renderer.xr.setReferenceSpaceType('local');
-document.body.appendChild( VRButton.createButton(this.renderer ) );
+document.body.appendChild( VRButton.createButton( renderer ) );
 document.body.appendChild( renderer.domElement );
 
 
